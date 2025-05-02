@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Russo+One&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Booking Form</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="ff1525a5-0f03-43db-a521-50f1f53f3836">
+            <input type="text" name="name" placeholder="Enter Your Name" class="conatct-inputs" required>
+            <input type="email" name="email" placeholder="Enter Email Name" class="conatct-inputs" required>
+            <input type="text" name="Car Name" list="cars" placeholder="Select Car" class="conatct-inputs" required>
+            <datalist id="cars">
+                <option value="BMW" />
+                <option value="Bentley" />
+                <option value="Mercedes" />
+                <option value="Audi" />
+                <option value="Volkswagen" />
+            </datalist>
+            <input type="text" name="Payment Rs." placeholder="Per Day Rs.100" class="conatct-inputs" required>
+            <input type="text" name="UPI transaction ID" placeholder="After pay enter UPI transaction ID" class="conatct-inputs" required>
+            <textarea name="Phone Number" required placeholder="Phone Number" class="conatct-inputs"></textarea>
+            <button type="submit">BOOK NOW <img src="assets/arrow_icon.png"></button>
+        </form>
+        <div class="contact-right">
+            <img src="./assets/form-removebg-preview.png">
+            
+
+        </div>
+        <img class="scan" src="./assets/scan.jpg">
+
+    </div>
+
+</body>
+
+</html>
